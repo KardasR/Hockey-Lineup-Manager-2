@@ -341,8 +341,11 @@
             this.Controls.Add(this.LW1txt);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(527, 758);
+            this.MinimumSize = new System.Drawing.Size(525, 756);
             this.Name = "PPform";
-            this.Text = "PPform";
+            this.Text = "Powerplay";
             this.Load += new System.EventHandler(this.PPform_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LW1txt.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.C1txt.Properties)).EndInit();

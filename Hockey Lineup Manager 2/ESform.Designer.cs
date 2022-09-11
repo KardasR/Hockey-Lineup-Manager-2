@@ -1050,8 +1050,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TeamNamelbl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(719, 825);
+            this.MinimumSize = new System.Drawing.Size(717, 823);
             this.Name = "ESform";
-            this.Text = "ESform";
+            this.Text = "Hockey Lineup Manager 2";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ESform_FormClosed);
             this.Load += new System.EventHandler(this.ESform_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LW1txt.Properties)).EndInit();

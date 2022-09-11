@@ -953,8 +953,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TeamNamelbl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(544, 825);
+            this.MinimumSize = new System.Drawing.Size(542, 823);
             this.Name = "AHLform";
-            this.Text = "AHLform";
+            this.Text = "AHL";
             this.Load += new System.EventHandler(this.AHLform_Load);
             ((System.ComponentModel.ISupportInitialize)(this.OG2txt.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.G2txt.Properties)).EndInit();

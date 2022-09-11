@@ -285,8 +285,11 @@
             this.Controls.Add(this.LW1txt);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(334, 751);
+            this.MinimumSize = new System.Drawing.Size(332, 749);
             this.Name = "PKform";
-            this.Text = "PKform";
+            this.Text = "Penalty Kill";
             this.Load += new System.EventHandler(this.PKform_Load);
             ((System.ComponentModel.ISupportInitialize)(this.RD2txt.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LD2txt.Properties)).EndInit();

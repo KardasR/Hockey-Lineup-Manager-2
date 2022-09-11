@@ -257,8 +257,11 @@
             this.Controls.Add(this.LW1txt);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(334, 604);
+            this.MinimumSize = new System.Drawing.Size(332, 602);
             this.Name = "FFform";
-            this.Text = "FFform";
+            this.Text = "4 on 4";
             this.Load += new System.EventHandler(this.FFform_Load);
             ((System.ComponentModel.ISupportInitialize)(this.RD3txt.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LD3txt.Properties)).EndInit();

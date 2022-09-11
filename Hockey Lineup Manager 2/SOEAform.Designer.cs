@@ -199,8 +199,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(465, 407);
+            this.MinimumSize = new System.Drawing.Size(463, 405);
             this.Name = "SOEAform";
-            this.Text = "SOEAform";
+            this.Text = "Shootout / Extra Attackers";
             this.Load += new System.EventHandler(this.SOEAform_Load);
             ((System.ComponentModel.ISupportInitialize)(this.EA1txt.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EA2txt.Properties)).EndInit();

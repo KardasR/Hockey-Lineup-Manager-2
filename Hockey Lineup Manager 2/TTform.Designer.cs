@@ -215,8 +215,11 @@
             this.Controls.Add(this.C1txt);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(334, 604);
+            this.MinimumSize = new System.Drawing.Size(332, 602);
             this.Name = "TTform";
-            this.Text = "TTform";
+            this.Text = "3 on 3";
             this.Load += new System.EventHandler(this.TTform_Load);
             ((System.ComponentModel.ISupportInitialize)(this.RD3txt.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LD3txt.Properties)).EndInit();
