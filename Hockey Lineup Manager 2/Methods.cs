@@ -19,7 +19,11 @@ namespace Hockey_Lineup_Manager_2
             if (typeof(T) == typeof(NHLTeam))
             {
                 if (Teams.ContainsKey(_currentTeam))
-                    ret = Teams[_currentTeam];
+                {
+                    // If I don't do this I get super fun reference problems so this is my lazy solution to that.
+                    var t = JsonSerializer.Serialize(Teams[_currentTeam]);
+                    ret = JsonSerializer.Deserialize<NHLTeam>(t);
+                }
                 else
                     ret = new NHLTeam();
             }

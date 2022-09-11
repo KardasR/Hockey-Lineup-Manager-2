@@ -138,6 +138,8 @@ namespace Hockey_Lineup_Manager_2
         {
             // Parse the textbox for the latest year, increase it and add it to the listbox.
             Yearlb.Items.Add(string.Format("{0}-{1}", int.Parse(Yearlb.Items[Yearlb.Items.Count - 1].ToString().Substring(5)), int.Parse(Yearlb.Items[Yearlb.Items.Count - 1].ToString().Substring(5)) + 1));                   // Add the new season string to the listbox
+            Yearlb.SelectedItem = Yearlb.Items[Yearlb.Items.Count - 1];
+            Methods.SetCurrent(Yearlb.SelectedItem.ToString());
             // Clear some textboxes of old data
             Recordtb.Text = "";
             Playofftb.Text = "";
@@ -151,8 +153,8 @@ namespace Hockey_Lineup_Manager_2
 
         private void Savebtn_Click(object sender, EventArgs e)
         {
-            Methods.SetCurrent(Yearlb.SelectedItem.ToString());
             NHLTeam team = Methods.SelectCurrent<NHLTeam>();
+
             team.Name = TeamNamelbl.Text;
             if (team.AHLLines == null)
                 team.AHLLines = new AHLTeam();
@@ -162,12 +164,12 @@ namespace Hockey_Lineup_Manager_2
             team.Playoff = Playofftb.Text;
 
             EvenStrengthLines line = new EvenStrengthLines();
-            Player player = new Player();
 
             //--------------------------------------------  1st Line / 1st Pairing  --------------------------------------------
             line.Line = 1;
 
             // Save 1st line Left Wing
+            Player player = new Player();
             player.Name = LW1txt.Text;
             player.Overall = string.IsNullOrEmpty(OLW1txt.Text) ? 0 : int.Parse(OLW1txt.Text);
             line.LeftWing = player;
