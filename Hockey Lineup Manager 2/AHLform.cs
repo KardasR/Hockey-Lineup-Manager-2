@@ -116,6 +116,7 @@ namespace Hockey_Lineup_Manager_2
             line.Line = 2;
 
             // Save 2nd line Left Wing
+            player = new Player();
             player.Name = LW2txt.Text;
             player.Overall = string.IsNullOrEmpty(OLW2txt.Text) ? 0 : int.Parse(OLW2txt.Text);
             line.LeftWing = player;
@@ -151,6 +152,7 @@ namespace Hockey_Lineup_Manager_2
             line.Line = 3;
 
             // Save 3rd line Left Wing
+            player = new Player();
             player.Name = LW3txt.Text;
             player.Overall = string.IsNullOrEmpty(OLW3txt.Text) ? 0 : int.Parse(OLW3txt.Text);
             line.LeftWing = player;
@@ -186,6 +188,7 @@ namespace Hockey_Lineup_Manager_2
             line.Line = 4;
 
             // Save 4th line Left Wing
+            player = new Player();
             player.Name = LW4txt.Text;
             player.Overall = string.IsNullOrEmpty(OLW4txt.Text) ? 0 : int.Parse(OLW4txt.Text);
             line.LeftWing = player;
@@ -209,6 +212,7 @@ namespace Hockey_Lineup_Manager_2
             line.Line = 5;
 
             // Save 5th line Left Wing
+            player = new Player();
             player.Name = LW5txt.Text;
             player.Overall = string.IsNullOrEmpty(OLW5txt.Text) ? 0 : int.Parse(OLW5txt.Text);
             line.LeftWing = player;
