@@ -78,9 +78,10 @@ namespace Hockey_Lineup_Manager_2
                 Location = monitor.Location;
             }
 
-            // Load the lines and set the year listbox to the most recent year
+            // Load the lines and set the year listbox to the most recent year, then load the latest lines
             Loadbtn.PerformClick();
             Yearlb.SelectedIndex = Yearlb.Items.Count - 1;
+            Loadbtn.PerformClick();
         }
 
         private void AllTextBoxes_DragEnter(object sender, DragEventArgs e)

@@ -77,6 +77,7 @@ namespace Hockey_Lineup_Manager_2
             FourOnFourLines ff3 = new FourOnFourLines();
             ff3.Unit = 3;
             ff3.Center = C3txt.Text;
+            ff3.Wing = LW3txt.Text;
             ff3.LeftDefence = LD3txt.Text;
             ff3.RightDefence = RD3txt.Text;
 
